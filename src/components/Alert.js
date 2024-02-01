@@ -6,8 +6,7 @@ const Capitalize = (word)=>{
   return lower.charAt(0).toUpperCase()+lower.slice(1);
 }
   return (
-    <div style={{position:'absolute',
-    left:'35%'}}>
+    <div style={{height:'55px'}}>
       {props.alert && <div className={`alert alert-${props.alert.type} alert-dismissible fade show`} role="alert">
         <strong>{Capitalize(props.alert.type)}</strong>: {props.alert.msg}
       </div>}
